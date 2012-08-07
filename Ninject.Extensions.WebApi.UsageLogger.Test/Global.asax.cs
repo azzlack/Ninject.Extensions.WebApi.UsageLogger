@@ -12,6 +12,8 @@ using System.Web.Routing;
 
 namespace Ninject.Extensions.WebApi.UsageLogger.Test
 {
+    using Ninject.Extensions.WebApi.UsageLogger.Handlers;
+
     using log4net.Config;
 
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
@@ -28,6 +30,8 @@ namespace Ninject.Extensions.WebApi.UsageLogger.Test
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             XmlConfigurator.Configure();
+
+            GlobalConfiguration.Configuration.MessageHandlers.Add(new UsageHandler());
         }
     }
 }
