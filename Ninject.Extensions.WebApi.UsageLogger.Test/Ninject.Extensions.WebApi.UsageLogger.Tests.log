@@ -1,8 +1,0 @@
-2012-08-07 09:33:52,608 [12] INFO  Ninject.Extensions.WebApi.UsageLogger.Handlers.UsageHandler GET: http://localhost:57329/api/values called from ::1
-2012-08-07 09:33:52,618 [12] INFO  Ninject.Extensions.WebApi.UsageLogger.Handlers.UsageHandler Content-Type: , Content-Length: 0
-2012-08-07 09:33:52,618 [12] INFO  Ninject.Extensions.WebApi.UsageLogger.Handlers.UsageHandler Accept-Encoding: gzip,deflate,sdch, Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3, Accept-Language: en-US,en;q=0.8
-2012-08-07 09:33:52,742 [12] INFO  Ninject.Extensions.WebApi.UsageLogger.Handlers.UsageHandler Request processing time: 0,1350135s
-2012-08-07 09:34:58,094 [12] INFO  Ninject.Extensions.WebApi.UsageLogger.Handlers.UsageHandler GET: http://localhost:57329/api/values/1 called from ::1
-2012-08-07 09:34:58,094 [12] INFO  Ninject.Extensions.WebApi.UsageLogger.Handlers.UsageHandler Content-Type: , Content-Length: 0
-2012-08-07 09:34:58,094 [12] INFO  Ninject.Extensions.WebApi.UsageLogger.Handlers.UsageHandler Accept-Encoding: gzip,deflate,sdch, Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3, Accept-Language: en-US,en;q=0.8
-2012-08-07 09:34:58,138 [12] INFO  Ninject.Extensions.WebApi.UsageLogger.Handlers.UsageHandler Request processing time: 0,0440044s
