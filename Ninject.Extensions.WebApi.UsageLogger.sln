@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ninject.Extensions.WebApi.UsageLogger", "Ninject.Extensions.WebApi.UsageLogger\Ninject.Extensions.WebApi.UsageLogger.csproj", "{DB316F0A-E91E-4E6B-A535-2929D201BC9B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetPackager", "NuGetPackager\NuGetPackager.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DB316F0A-E91E-4E6B-A535-2929D201BC9B} = {DB316F0A-E91E-4E6B-A535-2929D201BC9B}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ninject.Extensions.WebApi.UsageLogger.Test", "Ninject.Extensions.WebApi.UsageLogger.Test\Ninject.Extensions.WebApi.UsageLogger.Test.csproj", "{D8130A8E-68D1-48AD-BBC1-7CA1FBC631B2}"
 EndProject
