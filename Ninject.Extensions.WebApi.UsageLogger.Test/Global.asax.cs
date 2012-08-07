@@ -12,6 +12,8 @@ using System.Web.Routing;
 
 namespace Ninject.Extensions.WebApi.UsageLogger.Test
 {
+    using log4net.Config;
+
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801
 
@@ -24,6 +26,8 @@ namespace Ninject.Extensions.WebApi.UsageLogger.Test
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            XmlConfigurator.Configure();
         }
     }
 }
