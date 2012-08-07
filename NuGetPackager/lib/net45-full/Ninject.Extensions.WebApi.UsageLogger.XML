@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ninject.Extensions.WebApi.UsageLogger</name>
+    </assembly>
+    <members>
+        <member name="T:Ninject.Extensions.WebApi.UsageLogger.App_Start.Bootstrapper">
+            <summary>
+            Bootstrapper for the Usage Logger
+            </summary>
+        </member>
+        <member name="M:Ninject.Extensions.WebApi.UsageLogger.App_Start.Bootstrapper.PreStart">
+            <summary>
+            Executes right before the application is started
+            </summary>
+        </member>
+        <member name="T:Ninject.Extensions.WebApi.UsageLogger.Handlers.UsageHandler">
+            <summary>
+            Usage logger handler
+            </summary>
+        </member>
+        <member name="M:Ninject.Extensions.WebApi.UsageLogger.Handlers.UsageHandler.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ninject.Extensions.WebApi.UsageLogger.Handlers.UsageHandler"/> class.
+            </summary>
+        </member>
+        <member name="M:Ninject.Extensions.WebApi.UsageLogger.Handlers.UsageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
+            <summary>
+            Sends an HTTP request to the inner handler to send to the server as an asynchronous operation.
+            </summary>
+            <param name="request">The HTTP request message to send to the server.</param>
+            <param name="cancellationToken">A cancellation token to cancel operation.</param>
+            <returns>
+            Returns <see cref="T:System.Threading.Tasks.Task`1"/>. The task object representing the asynchronous operation.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="request"/> was null.</exception>
+        </member>
+        <member name="P:Ninject.Extensions.WebApi.UsageLogger.Handlers.UsageHandler.MaxContentLength">
+            <summary>
+            Gets or sets the max HTTP content length.
+            </summary>
+            <value>
+            The max HTTP content length.
+            </value>
+        </member>
+        <member name="P:Ninject.Extensions.WebApi.UsageLogger.Handlers.UsageHandler.Log">
+            <summary>
+            Gets the logger.
+            </summary>
+        </member>
+    </members>
+</doc>
