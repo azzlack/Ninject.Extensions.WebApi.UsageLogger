@@ -268,7 +268,9 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ninject.Extensions.WebApi.UsageLogger\Ninject.Extensions.WebApi.UsageLogger.csproj">

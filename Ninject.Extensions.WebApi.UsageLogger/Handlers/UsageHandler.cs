@@ -60,13 +60,15 @@
 
                     if (!string.IsNullOrEmpty(c.Result))
                     {
-                        if (this.MaxContentLength > 0 && c.Result.Length > this.MaxContentLength)
+                        var decodedResult = HttpUtility.UrlDecode(c.Result);
+
+                        if (this.MaxContentLength > 0 && !string.IsNullOrEmpty(decodedResult) && c.Result.Length > this.MaxContentLength)
                         {
-                            this.Log.Info("Data: {0}", HttpUtility.UrlDecode(c.Result).Substring(0, this.MaxContentLength - 1));
+                            this.Log.Info("Data: {0}", decodedResult.Substring(0, this.MaxContentLength - 1));
                         }
                         else 
                         {
-                            this.Log.Info("Data: {0}", HttpUtility.UrlDecode(c.Result));
+                            this.Log.Info("Data: {0}", decodedResult);
                         }
                     }
                 });
@@ -76,7 +78,14 @@
             // Log the error if it returned an error
             if (!response.IsSuccessStatusCode)
             {
-                this.Log.Error(response.Content.ReadAsStringAsync().Result);
+                var error = string.Format("{0} {1}", (int)response.StatusCode, response.ReasonPhrase);
+
+                if (response.Content != null)
+                {
+                    error += Environment.NewLine + response.Content.ReadAsStringAsync().Result;
+                }
+
+                this.Log.Error(error);
             }
 
             // Log performance

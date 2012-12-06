@@ -4,16 +4,6 @@
         <name>Ninject.Extensions.WebApi.UsageLogger</name>
     </assembly>
     <members>
-        <member name="T:Ninject.Extensions.WebApi.UsageLogger.App_Start.Bootstrapper">
-            <summary>
-            Bootstrapper for the Usage Logger
-            </summary>
-        </member>
-        <member name="M:Ninject.Extensions.WebApi.UsageLogger.App_Start.Bootstrapper.PreStart">
-            <summary>
-            Executes right before the application is started
-            </summary>
-        </member>
         <member name="T:Ninject.Extensions.WebApi.UsageLogger.Handlers.UsageHandler">
             <summary>
             Usage logger handler
